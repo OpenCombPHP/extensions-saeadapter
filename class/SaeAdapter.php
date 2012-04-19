@@ -37,7 +37,14 @@ class SaeAdapter extends Extension
 							'sDBName' => "<?php echo SAE_MYSQL_PASS ?>" ,
 					) ,
 					
-					'process' => array('org\\opencomb\\saeadapter\\platform\\CreateSaeDistribution','process') ,
+					'process-before-package' => array('org\\opencomb\\saeadapter\\platform\\CreateSaeDistribution','processBeforePackage') ,
+					
+					'arrLibClasses' => array("org\\jecat\\framework\\fs\\wrapper\\SaeStorageWrapperEx") ,
+					'arrInitCodes' => "
+// 注册 SAE wrapper
+stream_wrapper_unregister('saestor') ;
+stream_wrapper_register('saestor','SaeStorageWrapperEx') ;
+" ,
 			) ;
 		}
 	}
