@@ -3,13 +3,18 @@
 
 	<name>saeadapter</name>
 	<version>0.1</version>
-	<title>新浪云计算引擎适配器</title>
-	<description>使蜂巢系统能够在新浪云计算引擎上运行的关键扩展</description>
-	
+	<title>新浪SAE发行版制作程序适配器</title>
+	<description>
+	使development-toolkit扩展能够制作运行在新浪云计算引擎(SAE)上的蜂巢发行版本。
+	</description>
 
 	<class>org.opencomb.saeadapter.SaeAdapter</class>
-	<package folder="/class" namespace="org.opencomb.saeadapter" />
+	<package folder="/packages/org.opencomb.saeadapter" namespace="org.opencomb.saeadapter" />
+	<package folder="/packages/org.opencomb.driver" namespace="org.opencomb.driver" />
+	<package folder="/packages/cn.com.sina.sae" namespace="cn.com.sina.sae" />
 
 	<template folder="/template" />
+	
+	<require type="extension" item="development-toolkit"><![CDATA[ >=0.1 ]]></require>
 	
 </Extension>
