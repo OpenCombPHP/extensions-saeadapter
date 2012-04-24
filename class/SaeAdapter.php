@@ -3,7 +3,7 @@ namespace org\opencomb\saeadapter ;
 
 use org\opencomb\development\toolkit\platform\CreateDistribution;
 use org\opencomb\platform\service\Service;
-use org\opencomb\platform\ext\Extension ;
+use org\opencomb\platform\ext\Extension;
 
 class SaeAdapter extends Extension 
 {

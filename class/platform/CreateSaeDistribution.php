@@ -1,10 +1,6 @@
 <?php
 namespace org\opencomb\saeadapter\platform ;
 
-use org\jecat\framework\lang\oop\Package;
-
-use org\jecat\framework\lang\oop\ClassLoader;
-
 use org\opencomb\development\toolkit\platform\CreateDistribution;
 use net\phpconcept\pclzip\PclZip;
 
@@ -18,5 +14,3 @@ class CreateSaeDistribution
 		) ;
 	} 
 }
-
-?>

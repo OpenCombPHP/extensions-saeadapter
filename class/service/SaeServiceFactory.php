@@ -5,7 +5,7 @@ use org\jecat\framework\cache\SaeStorageCache;
 use org\jecat\framework\cache\EmptyCache;
 use org\opencomb\platform\service\ServiceSerializer;
 use org\opencomb\platform\service\Service;
-use org\opencomb\platform\service\ServiceFactory ;
+use org\opencomb\platform\service\ServiceFactory;
 
 class SaeServiceFactory extends ServiceFactory
 {
@@ -36,4 +36,5 @@ class SaeServiceFactory extends ServiceFactory
 		return ;
 	}
 }
+
 
