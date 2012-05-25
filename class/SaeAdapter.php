@@ -38,6 +38,9 @@ class SaeAdapter extends Extension
 							'sDBPassword' => "<?php echo SAE_MYSQL_PASS ?>" ,
 							'sDBName' => "<?php echo SAE_MYSQL_DB ?>" ,
 					) ,
+				
+					// service 安装位置
+					'sInstallServiceFolder' => "install_root.'/services'" ,
 					
 					'process-before-package' => array('org\\opencomb\\saeadapter\\platform\\CreateSaeDistribution','processBeforePackage') ,
 					'process-after-package' => array( 'org\\opencomb\\development\\toolkit\\platform\\CreateDistribution', 'debugProcessAfterPackage' ) ,
